@@ -1,11 +1,14 @@
 # 🤖 Gemini AI Chatbot
 
-An AI-powered chatbot built with **Streamlit** and **Google Gemini API** that generates real-time responses to user queries.
+An AI-powered chatbot built using Streamlit and Google Gemini API with real-time conversational AI capabilities.
 
----
-
+## 🌐 Live Demo
+[
+https://your-app-link.streamlit.app](https://gemini-ai-chatbot-haygzpo26jresxh26jfbbk.streamlit.app/)
 ## ✨ Features
-
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
+![Gemini](https://img.shields.io/badge/Gemini-AI-orange)
 - Real-time AI-generated responses
 - Chat history support
 - Clear chat functionality
@@ -27,7 +30,9 @@ An AI-powered chatbot built with **Streamlit** and **Google Gemini API** that ge
 ---
 
 ## 📂 Project Structure
+## 🧠 Project Workflow
 
+User Input → Streamlit UI → Gemini API → Gemini LLM → AI Response
 ```text
 gemini-ai-chatbot/
 ├── app.py
@@ -36,7 +41,14 @@ gemini-ai-chatbot/
 ├── .gitignore
 ├── .env
 └── chatbot_output.png
+## ✨ Features
 
+- Real-time AI responses
+- Chat history support
+- Streamlit cloud deployment
+- Secure API handling
+- Responsive UI
+- Gemini 2.5 Flash integration
 ⚙️ Setup Instructions
 1. Clone the repository
 git clone https://github.com/Gautams1990/gemini-ai-chatbot.gitcd gemini-ai-chatbot
