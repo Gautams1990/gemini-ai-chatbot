@@ -54,9 +54,9 @@ streamlit run app.py
 This project uses a .env file to keep the API key secure.
 Make sure .env is added to .gitignore so it is not uploaded to GitHub.
 
-📸 Output Screenshot
+## 📸 Output Screenshot
 
-![Gemini AI Chatbot](chatbot_output.png.jpj)
+![Gemini AI Chatbot](chatbot_output.png)
 💡 What I Learned
 
 
