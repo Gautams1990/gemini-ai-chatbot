@@ -94,6 +94,7 @@ Deploy online
 
 [Click Here to Use the App](https://gemini-ai-chatbot-haygzpo26jresxh26jfbbk.streamlit.app/)
 Add multi-turn memory improvements
+![Gemini AI Chatbot](live_deployment_output.jpg)
 
 
 Support file upload and PDF question answering
