@@ -90,7 +90,9 @@ Add dark mode
 
 Deploy online
 
+## 🌐 Live Demo
 
+[Click Here to Use the App](https://gemini-ai-chatbot-haygzpo26jresxh26jfbbk.streamlit.app/)
 Add multi-turn memory improvements
 
 
