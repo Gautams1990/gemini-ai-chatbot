@@ -28,4 +28,16 @@ An AI-powered chatbot built with Streamlit and Google's Gemini API that generate
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/Gautams1990/gemini-ai-chatbot.git
+## 🔐 Environment Variables
+
+Create a `.env` file and add:
+
+GEMINI_API_KEY=your_api_key_here
+git clone https://github.com/Gautams1990/gemini-ai-chatbot.git.env
+__pycache__/## 🚀 Future Improvements
+
+- Add chat history
+- Add voice input
+- Improve UI
+- Add dark mode
+- Deploy online
