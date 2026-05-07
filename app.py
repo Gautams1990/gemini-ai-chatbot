@@ -12,23 +12,57 @@ api_key = os.getenv("GEMINI_API_KEY")
 # Create Gemini client
 client = genai.Client(api_key=api_key)
 
-# Streamlit title
+# Page title
 st.title("🤖 Gemini AI Chatbot")
 
-st.write("Ask any question and get AI-generated answers.")
+st.write("Ask anything and chat with Gemini AI.")
 
-# User input
-user_input = st.text_input("Ask me anything:")
+# Create chat history
+if "messages" not in st.session_state:
+    st.session_state.messages = []
 
-# Generate response
-if user_input:
+# Display old chat messages
+for message in st.session_state.messages:
 
-    with st.spinner("Thinking..."):
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
 
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=user_input
-        )
+# Chat input box
+prompt = st.chat_input("Type your message...")
 
-        st.write("🤖 AI Response:")
-        st.write(response.text)
+# If user sends message
+if prompt:
+
+    # Store user message
+    st.session_state.messages.append(
+        {
+            "role": "user",
+            "content": prompt
+        }
+    )
+
+    # Show user message
+    with st.chat_message("user"):
+        st.markdown(prompt)
+
+    # Generate AI response
+    with st.chat_message("assistant"):
+
+        with st.spinner("Thinking..."):
+
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt
+            )
+
+            ai_response = response.text
+
+            st.markdown(ai_response)
+
+    # Store AI response
+    st.session_state.messages.append(
+        {
+            "role": "assistant",
+            "content": ai_response
+        }
+    )
