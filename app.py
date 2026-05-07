@@ -53,23 +53,23 @@ if prompt:
         st.markdown(prompt)
 
     # AI response section
-    with st.chat_message("assistant"):
-        with st.spinner("Thinking..."):
-            try:
-                response = client.models.generate_content(
-                    model="gemini-2.0-flash",
-                    contents=prompt
-                )
-                answer = response.text
-            except Exception:
-                answer = str(e)
+   with st.chat_message("assistant"):
 
-            st.markdown(answer)
+    with st.spinner("Thinking..."):
 
-    # Store AI response
-    st.session_state.messages.append(
-        {
-            "role": "assistant",
-            "content": answer
+        try:
+
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt
+            )
+
+            answer = response.text
+
+        except Exception as e:
+
+            answer = str(e)
+
+        st.markdown(answer)
         }
     )
