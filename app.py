@@ -62,7 +62,7 @@ if prompt:
                 )
                 answer = response.text
             except Exception:
-                answer = "⚠️ AI service is temporarily busy."
+                answer = str(e)
 
             st.markdown(answer)
 
