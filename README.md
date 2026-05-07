@@ -56,7 +56,7 @@ Make sure .env is added to .gitignore so it is not uploaded to GitHub.
 
 ## 📸 Output Screenshot
 
-![Gemini AI Chatbot](chatbot_output.png)
+![Gemini AI Chatbot](chatbot_output.jpg)
 💡 What I Learned
 
 
